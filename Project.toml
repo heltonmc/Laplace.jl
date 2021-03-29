@@ -1,0 +1,13 @@
+name = "Laplace"
+uuid = "41c87fe9-52fa-4ece-bb37-70707c96ab20"
+authors = ["Michael Helton"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
