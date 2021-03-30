@@ -19,5 +19,5 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/heltonmc/Laplace.jl",
+    repo="github.com/heltonmc/Laplace.jl.git",
 )
