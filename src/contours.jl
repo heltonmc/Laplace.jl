@@ -46,6 +46,7 @@ julia> InverseLaplace.hyperbola(s -> 1/(s + 1), 2.0)
 """
 function hyperbola(f::Function, t::AbstractFloat; N = 16)
     a =  zero(Complex{eltype(t)})
+    N = convert(eltype(t), N)
     h = 1.081792140 / N
     for k in 0:N-1
         sk = s((k + 1/2) * h, N, t)
@@ -117,6 +118,7 @@ julia> InverseLaplace.hyper_fixed(s -> 1/(s + 1), 2.0:3.0)
  0.04978706836781721
 """
 function hyper_fixed(f::Function, t::AbstractArray; N = 24)
+    N = convert(eltype(t), N)
     a, sk, h = fixed_sk(f, N, t)
     out = zeros(eltype(h), length(t))
     Threads.@threads for ind in eachindex(t)
