@@ -12,5 +12,6 @@ makedocs(
 )
 
 deploydocs(
-    repo="github.com/heltonmc/Laplace.jl.git"
+    repo="github.com/heltonmc/Laplace.jl.git",
+    devbranch = "main"
 )
