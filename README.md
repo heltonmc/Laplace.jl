@@ -25,4 +25,7 @@ $$ \mathscr{L}^{-1} \\{ \bar{f}(s) \\} = f(t) = \frac{1}{2 \pi i} {\int_{\sigma 
 - Gaver-Stehfest method
 
 #### Complex arguments
-- Bromwich contour integration (hyperbola contour)
+- Bromwich contour integration
+  - Hyperbola
+  - Fixed hyperbola (inversion at many time points)
+  - Improved talbot
